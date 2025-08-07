@@ -1,0 +1,42 @@
+<h3>Registro nueva solicitud</h3>
+<form>
+    <div>
+        <label for="numeroSolicitud">Número de Solicitud</label>
+        <input id="numeroSolicitud" name="numeroSolicitud" type="text" />
+    </div>
+    <div>
+        <label for="tipoSolicitud">Tipo de Solicitud</label>
+        <select id="tipoSolicitud" name="tipoSolicitud">
+      <option *ngFor="let tipo of tiposSolicitud" [value]="tipo.id">{{ tipo.nombre }}</option>
+    </select>
+    </div>
+    <div>
+        <label for="usuarioSolicitante">Usuario Solicitante</label>
+        <input id="usuarioSolicitante" name="usuarioSolicitante" type="text" />
+    </div>
+    <div>
+        <label for="titulo">Título</label>
+        <input id="titulo" name="titulo" type="text" />
+    </div>
+    <div>
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+    </div>
+    <div>
+        <label for="datosEspecificos">Datos Específicos</label>
+        <textarea id="datosEspecificos" name="datosEspecificos"></textarea>
+    </div>
+    <div>
+        <label for="fechaSolicitud">Fecha de Solicitud</label>
+        <input id="fechaSolicitud" name="fechaSolicitud" type="datetime-local" />
+    </div>
+    <div>
+        <label for="fechaVencimiento">Fecha de Vencimiento</label>
+        <input id="fechaVencimiento" name="fechaVencimiento" type="datetime-local" />
+    </div>
+    <div>
+        <label for="prioridad">Prioridad</label>
+        <input id="prioridad" name="prioridad" type="number" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>

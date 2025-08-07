@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<p>lista de solicitudes</p>
+<app-generic-table [data]="solicitudes" [columns]="columns" [pagination]="true" [filter]="true" (pagechange)="onPageChange($event.pageIndex)" (filterchange)="onFilterChange($event)">
+</app-generic-table>
